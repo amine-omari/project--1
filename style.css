@@ -1,0 +1,266 @@
+html {
+    font-family: 'Manrope', sans-serif;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    max-width: 1500px;
+    margin: 0px auto;
+}
+header {
+    display: flex;
+    justify-content: space-around;
+}
+.left-header {
+    display: flex;
+    gap: 20px;
+}
+header a {
+    text-decoration: none;
+    color: gray;
+    transition: 1s;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+header svg {
+    margin-right: 30px;
+}
+header button {
+    padding: 10px;
+    font-size: 17px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    display: flex;
+    gap: 15px;
+    transition: 0.5s;
+}
+i {
+    font-size: 19px;
+}
+header a:hover {
+    color: black;
+}
+header button:hover {
+    scale: 0.97;
+    cursor: pointer;
+    opacity: 0.85;
+}
+main {
+    margin-top: 195px;
+    text-align: center;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+main h3 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #2562FE;
+    margin-bottom: 0px;
+}
+main h1 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: bolder;
+    font-size: 60px;
+    margin-top: 8px;
+    margin-bottom: 0px;
+    line-height: 60px;
+}
+main h2 {
+    padding-left: 150px;
+    padding-right: 150px;
+    font-size: 18px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: bold;
+    color: #646464;
+}
+main button {
+    padding: 15px 25px 15px 25px;
+    font-size: 16px;
+    margin-top: 8px;
+    color: white;   
+    background-color: #2562FE;
+    border:none;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+main button:hover {
+    cursor: pointer;
+    scale: 0.98;
+    opacity: 0.85;
+}
+section {
+    text-align: center;
+    margin: 210px 100px 0px 100px;
+}
+section h2 {
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+section h3 {
+    font-weight: normal;
+    color: #646464;
+    padding: 0px 300px 0px 300px;
+}
+.features-container {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 150px);
+    gap: 30px;
+}
+.features-container div {
+    transition: 0.5s;
+}
+.features-container i{
+    transition: 0.5s;
+}
+section h4 {
+    font-size: 19px;
+    margin-bottom: 0px;
+    font-weight: normal;
+}
+section p {
+    padding: 0px 35px 0px 35px;
+}
+.features-container div:hover {
+    scale: 1.05;
+    cursor: default;
+}
+.features-container i:hover {
+    color: #2562FE;
+}
+
+
+@media only screen and (max-width:600px) {
+    html {
+        width: fit-content;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 120px;
+    }
+    .left-header {
+        gap: 10px;
+    }
+    header a {
+        font-size: 12px;
+        padding-top: 10px;
+    }
+    header svg {
+        margin-right: 0px;
+    }
+    main {
+        margin: 0px;
+    }
+    main h1 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    main h2 {
+        padding: 0px 10px 0px 10px;
+        font-weight: normal;
+        font-size: 16px;
+    }
+    .features-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, auto);
+    }
+    section {
+        padding: 0px 10px 0px 10px;
+        margin: 150px 0px 0px 0px;
+    }
+    section h3 {
+        padding: 0px;
+        font-size: 16px;
+    }
+    section h2 {
+        font-size: 20px;
+    }
+    main button {
+        padding: 20px;
+    }
+    section h4 {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    section p {
+        font-size: 15px;
+        padding: 0px;
+        font-weight: lighter;
+        margin: 0px;
+    }
+}
+
+
+@media only screen and (min-width:600px) {
+    html {
+        width: fit-content;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 150px;
+    }
+    main {
+        margin: 0px;
+    }
+    main h3 {
+        margin: 10px 0px;
+    }
+    main h1 {
+        font-size: 48px;
+        margin: 0px;
+    }
+    main h2 {
+        padding: 0px 80px;
+        font-weight: normal;
+    }
+    section {
+        padding: 0px 10px 0px 10px;
+        margin: 150px 30px 0px 30px;
+    }
+    section h3 {
+        padding: 0px 60px;
+    }
+    .features-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, auto);
+    }
+    section p {
+        padding: 0px;
+        margin: 10px 0px;
+    }
+}
+
+
+@media only screen and (min-width: 992px) {
+    html {
+        margin: 10px;
+    }
+    main h1 {
+        font-size: 60px;
+        padding: 0px 20px;
+    }
+    main h2 {
+        padding: 0px 200px;
+    }
+    section h3 {
+        padding: 0px 200px;
+    }
+    .features-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, auto);
+    }
+    section h4 {
+        margin-top: 10px;
+    }
+    section p {
+        margin: 5px 0px;
+    }
+}
